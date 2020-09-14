@@ -1,0 +1,36 @@
+:root {
+    --primary-color: #FB5607;
+    --blue-color: #3A86FF;
+    --purple-color: #8338EC;
+    --pink-color: #FF006E;
+    --yellow-color: #FFBE0B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    padding: 0;
+    user-select: none;
+    background: var(--bg-body-color);
+}
+
+.header {
+    display: flex;
+}
+
+#logo-bookbed {
+    height: 30px;
+}
+
+.user-icon {
+    display: flex;
+}
+
+.user-icon img {
+    height: 30px;
+}
