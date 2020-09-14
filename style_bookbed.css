@@ -12,25 +12,126 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 50px;
+.content {
+    margin: 50px 100px;
     padding: 0;
     user-select: none;
     background: var(--bg-body-color);
 }
 
 .header {
-    display: flex;
+    position: relative;
+    width: 100%;
+    display: inline-flex;
 }
 
 #logo-bookbed {
-    height: 30px;
+    position: absolute;
+    height: 50px;
 }
 
 .user-icon {
-    display: flex;
+    position: absolute;
+    display: inline-flex;
+    right: 0;
 }
 
 .user-icon img {
-    height: 30px;
+    height: 50px;
+}
+
+.user-icon p {
+    margin-right: 10px;
+    align-self: center;
+    color: var(--blue-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.user-icon p:hover {
+    text-decoration: underline;
+}
+
+.body {
+    margin-top: 70px;
+    position: relative;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.body img {
+    height: 200px;
+    left: calc(50% - 100px);
+    margin-bottom: 30px;
+}
+
+.body span,
+.body a {
+    display: block;
+    color: #707070;
+}
+
+.body span {
+    font-size: 30px
+}
+
+#text-promise {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: light;
+}
+
+.reset-password {
+    position: absolute;
+    margin-top: 60px;
+    background-color: var(--primary-color);
+    width: 300px;
+    height: 60px;
+    left: calc(50% - 150px);
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+
+.reset-password a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    margin-top: 14px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    background-color: black;
+    height: 15px;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.footer>div:nth-child(4) {
+    background-color: var(--purple-color);
+    width: 20%;
+}
+
+.footer>div:nth-child(3) {
+    background-color: var(--pink-color);
+    width: 20%;
+}
+
+.footer>div:nth-child(2) {
+    background-color: var(--primary-color);
+    width: 20%;
+}
+
+.footer>div:nth-child(1) {
+    background-color: var(--yellow-color);
+    width: 20%;
+}
+
+.footer>div {
+    background-color: var(--blue-color);
+    width: 20%;
 }
